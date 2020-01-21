@@ -6,7 +6,7 @@ https.createServer((req, res) => {
     let requestUrl = url.parse(req.url).path;
     console.log('handling request for', requestUrl);
     if (requestUrl === '/') {
-        requestUrl = 'index.html';
+        requestUrl = 'index-kill-fonts.html';
     }
     let timeout = 0;
     if (requestUrl.includes('.js')) {
